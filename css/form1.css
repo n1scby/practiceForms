@@ -1,0 +1,33 @@
+form{margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid burlywood;
+    border-radius: 1rem;}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    
+    margin: 1rem 0;
+}
+
+input, textarea {
+    font: 1rem sans-serif;
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid teal;    
+    margin: 1rem 0;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea{
+    vertical-align: top;
+    height: 5rem;
+}
+
+button {margin-left: 1rem;}
+.button{padding-left: 1rem;}

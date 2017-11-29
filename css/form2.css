@@ -1,0 +1,7 @@
+form div {padding: 1rem;}
+form {width: 80%;
+    margin: auto;
+    padding: 1rem;
+      border: 2px solid gray;
+      border-radius: 2rem;
+      }
