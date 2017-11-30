@@ -8,29 +8,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
 
-     <link rel="stylesheet" href="css/form3.css">
-    <title>Form 3 Appointment</title>
+     <link rel="stylesheet" href="css/form4.css">
+    <title>Form 4 Appointment Modified</title>
 </head>
 
 <body>
     <div class="container-fluid align-content-center">
-        <h1 class="text-center my-2">Make an Appointment</h1>
+        <h1 class="text-center my-2">Appointment Form Modified</h1>
     <form  class="p-4" action="http://formreflector.azurewebsites.net/form-reflector/ " method="post">
+        <fieldset>
+            <legend>Make an Appointment</legend>
         <div class="form-group mb-2">
             <label for="name">Name:</label>
-            <input class="form-control" type="text" id="name" name="user-name" autofocus="true">
+            <input class="form-control" type="text" id="name" name="user-name" autofocus="true" placeholder="Scooby Doo">
         </div>
         <div class="form-group mb-2">
             <label for="mail">Email Address:</label>
-            <input class="form-control" type="email" id="mail" name="email-address">
+            <input class="form-control" type="email" id="mail" name="email-address" placeholder="name@email.com">
         </div>
         <div class="form-group">
             <label for="date-time">Date:</label>
             <input type="datetime-local" class="form-control" id="date-time" name="appt-time"></textarea>
         </div>
+        <div>If the requested time is unavailble what is your preference?
+            <p>
+            <label for="am">am</label>
+            <input type="radio" id="am" name="am-pm" value="am">
+            <label for="pm">pm</label>
+            <input type="radio" id="pm" name="am-pm" value="pm">
+            </p>
+        </div>
         <div>
             <button class="btn btn-dark" type="submit">Submit Appointment Request</button>
         </div>
+        
+    </fieldset>
     </form>
     </div>
 </body>
